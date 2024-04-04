@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project23</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        position: relative;
+        border-top: 100px solid red;
+        border-right: 100px solid blue;
+        border-bottom: 100px solid green;
+        border-left: 100px solid yellow;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        margin: 50px auto;
+    }
+    .logo::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -90px;
+        transform: translateY(-50%);
+        width: 235px;
+        height: 100px;
+        background: blue;
+    }
+    .logo1{
+        content: "";
+        position: absolute;
+        border-top: 200px solid transparent;
+        border-right: 200px solid white;
+        margin-top: -37%;
+        margin-left: 53%;
+    }
+    
+</style>
+<body>
+    <div class="logo"></div>
+    <div class="logo1"></div>
+</body>
+</html>
